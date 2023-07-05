@@ -1,0 +1,232 @@
+
+.login-page {
+  background-color: #59afa0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-page .overlap-group-wrapper {
+  background-color: #59afa0;
+  border: 1px none;
+  height: 832px;
+  width: 1280px;
+}
+
+.login-page .overlap-group {
+  background-color: #59afa0;
+  height: 832px;
+  position: relative;
+}
+
+.login-page .ruta-n {
+  height: 832px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1126px;
+}
+
+.login-page .group {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 529px;
+  left: 289px;
+  position: absolute;
+  top: 152px;
+  width: 701px;
+}
+
+.login-page .div {
+  height: 428px;
+  left: 57px;
+  position: relative;
+  top: 30px;
+  width: 573px;
+}
+
+.login-page .frame {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  left: 0;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  width: fit-content;
+}
+
+.login-page .text-wrapper {
+  color: #59afa0;
+  font-family: "Poppins", Helvetica;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.login-page .password-wrapper {
+  border: 1px solid;
+  border-color: #aeaeae;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 60px;
+  left: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: 208px;
+  width: 560px;
+}
+
+.login-page .password {
+  background-color: transparent;
+  border: 0;
+  color: #aeaeae;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  height: 30px;
+  left: 41px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding: 0;
+  position: relative;
+  top: 14px;
+  width: 495px;
+}
+
+.login-page .email-id-wrapper {
+  border: 1px solid;
+  border-color: #aeaeae;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 60px;
+  left: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: 115px;
+  width: 560px;
+}
+
+.login-page .email-id {
+  background-color: transparent;
+  border: 0;
+  color: #aeaeae;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  height: 30px;
+  left: 41px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding: 0;
+  position: relative;
+  top: 14px;
+  width: 472px;
+}
+
+.login-page .div-wrapper {
+  align-items: center;
+  background-color: #59afa0;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px #00000040;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  left: 0;
+  padding: 15px 251px;
+  position: absolute;
+  top: 362px;
+  width: fit-content;
+}
+
+.login-page .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.login-page .frame-2 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  left: 1px;
+  padding: 10px;
+  position: absolute;
+  top: 285px;
+  width: fit-content;
+}
+
+.login-page .frame-3 {
+  border: 1px solid;
+  border-color: #9a9797;
+  border-radius: 5px;
+  height: 20px;
+  min-width: 20px;
+  position: relative;
+}
+
+.login-page .text-wrapper-3 {
+  color: #9a9797;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.login-page .frame-4 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  left: 406px;
+  padding: 10px;
+  position: absolute;
+  top: 285px;
+  width: fit-content;
+}
+
+.login-page .text-wrapper-4 {
+  color: #9a9797;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.login-page .ruta-n-wrapper {
+  background-color: #fdc300;
+  border-radius: 77px;
+  height: 154px;
+  left: 1075px;
+  position: absolute;
+  top: 38px;
+  width: 154px;
+}
+
+.login-page .img {
+  height: 74px;
+  left: 33px;
+  position: absolute;
+  top: 40px;
+  width: 89px;
+}

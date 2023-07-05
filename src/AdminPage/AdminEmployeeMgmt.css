@@ -1,0 +1,688 @@
+
+.administrator {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.administrator .div {
+  background-color: #ffffff;
+  border: 1px none;
+  height: 832px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.administrator .overlap {
+  background-color: #dcf6f3;
+  height: 778px;
+  left: 304px;
+  position: absolute;
+  top: 54px;
+  width: 976px;
+}
+
+.administrator .input {
+  height: 50px;
+  left: 48px;
+  position: absolute;
+  top: 39px;
+  width: 320px;
+}
+
+.administrator .overlap-group {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/rectangle-copy-7-3@2x.png);
+  background-size: 100% 100%;
+  height: 51px;
+  position: relative;
+  width: 321px;
+}
+
+.administrator .input-text-en-fondo {
+  color: #3e3e3e;
+  font-family: "Poppins", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  left: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+  opacity: 0.3;
+  position: absolute;
+  top: 14px;
+}
+
+.administrator .group {
+  height: 63px;
+  left: 416px;
+  position: absolute;
+  top: 39px;
+  width: 253px;
+}
+
+.administrator .text-wrapper {
+  color: #6fd7c9;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 15px;
+}
+
+.administrator .overlap-group-wrapper {
+  height: 63px;
+  left: 53px;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+
+.administrator .overlap-group-2 {
+  height: 63px;
+  position: relative;
+  width: 198px;
+}
+
+.administrator .rectangle {
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 51px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 198px;
+}
+
+.administrator .text-wrapper-2 {
+  color: #3e3e3e;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 200;
+  left: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 15px;
+}
+
+.administrator .vector {
+  height: 10px;
+  left: 163px;
+  position: absolute;
+  top: 20px;
+  width: 16px;
+}
+
+.administrator .table-footer {
+  align-items: center;
+  display: flex;
+  gap: 26px;
+  height: 47px;
+  justify-content: flex-end;
+  left: 335px;
+  padding: 0px 10px 0px 0px;
+  position: absolute;
+  top: 690px;
+  width: 342px;
+}
+
+.administrator .paginador {
+  height: 42px;
+  margin-left: -15px;
+  min-width: 347px;
+  position: relative;
+}
+
+.administrator .div-wrapper {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/oval@2x.png);
+  background-size: 100% 100%;
+  height: 40px;
+  left: 103px;
+  position: absolute;
+  top: 2px;
+  width: 40px;
+}
+
+.administrator .text-wrapper-3 {
+  color: #2db2a0;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 5px;
+}
+
+.administrator .text-wrapper-4 {
+  color: #3e3e3e;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 68px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 7px;
+}
+
+.administrator .text-wrapper-5 {
+  color: #3e3e3e;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 168px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 7px;
+}
+
+.administrator .text-wrapper-6 {
+  color: #3e3e3e;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 218px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 7px;
+}
+
+.administrator .text-wrapper-7 {
+  color: #3e3e3e;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 268px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 7px;
+}
+
+.administrator .img {
+  height: 50px;
+  left: 303px;
+  position: absolute;
+  top: -3px;
+  width: 50px;
+}
+
+.administrator .group-2 {
+  height: 50px;
+  left: -6px;
+  position: absolute;
+  top: -3px;
+  width: 50px;
+}
+
+.administrator .text-wrapper-8 {
+  color: #3e3e3e;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  left: 79px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 120px;
+  width: 19px;
+}
+
+.administrator .ellipse {
+  height: 24px;
+  left: 48px;
+  position: absolute;
+  top: 120px;
+  width: 24px;
+}
+
+.administrator .radiobtn {
+  height: 24px;
+  left: 143px;
+  position: absolute;
+  top: 120px;
+  width: 151px;
+}
+
+.administrator .text-wrapper-9 {
+  color: #3e3e3e;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  left: 31px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.administrator .ellipse-2 {
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 24px;
+}
+
+.administrator .radiobtn-2 {
+  height: 24px;
+  left: 300px;
+  position: absolute;
+  top: 120px;
+  width: 151px;
+}
+
+.administrator .text-wrapper-10 {
+  color: #2db2a0;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  left: 34px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: -1px;
+}
+
+.administrator .ellipse-3 {
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 24px;
+}
+
+.administrator .group-3 {
+  height: 29px;
+  left: 726px;
+  position: absolute;
+  top: 155px;
+  width: 124px;
+}
+
+.administrator .text-wrapper-11 {
+  color: #2db2a0;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 600;
+  left: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 5px;
+}
+
+.administrator .vector-wrapper {
+  background-color: #b7faf1;
+  border-radius: 14.5px;
+  height: 29px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 29px;
+}
+
+.administrator .vector-2 {
+  height: 14px; /*change from 14*/
+  left: 8px; /*change from 8*/
+  position: absolute;
+  top: 8px; /*change from 8*/
+  width: 14px;
+}
+
+.administrator .group-wrapper {
+  height: 463px;
+  left: 31px;
+  position: absolute;
+  top: 198px;
+  width: 913px;
+}
+
+.administrator .group-4 {
+  height: 463px;
+}
+
+.administrator .img-wrapper {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/employee-info-display--admin.png);
+  background-size: 100% 100%;
+  height: 471px;
+  left: -4px;
+  position: relative;
+  width: 921px;
+}
+
+.administrator .group-5 {
+  height: 35px;
+  left: 823px;
+  position: absolute;
+  top: 9px;
+  width: 73px;
+}
+
+.administrator .overlap-2 {
+  background-color: #b7faf1;
+  height: 36px;
+  left: 858px;
+  position: absolute;
+  top: 152px;
+  width: 85px;
+}
+
+.administrator .text-wrapper-12 {
+  color: #2db2a0;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 600;
+  left: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  width: 64px;
+}
+
+.administrator .overlap-3 {
+  background-color: #59afa0;
+  height: 832px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 304px;
+}
+
+.administrator .logo-rutan {
+  height: 71px;
+  left: 90px;
+  position: absolute;
+  top: 744px;
+  width: 125px;
+}
+
+.administrator .mask-group {
+  height: 832px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 304px;
+}
+
+.administrator .mask-group-2 {
+  height: 832px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 304px;
+}
+
+.administrator .home {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 60px;
+  letter-spacing: 0;
+  line-height: 21.7px;
+  position: absolute;
+  top: 143px;
+  white-space: nowrap;
+}
+
+.administrator .home-miruta {
+  height: 19px;
+  left: 27px;
+  position: absolute;
+  top: 144px;
+  width: 19px;
+}
+
+.administrator .ruta-n-wrapper {
+  background-color: #fdc300;
+  border-radius: 29.5px;
+  height: 59px;
+  left: 129px;
+  position: absolute;
+  top: 10px;
+  width: 59px;
+}
+
+.administrator .ruta-n {
+  height: 28px;
+  left: 13px;
+  position: absolute;
+  top: 15px;
+  width: 34px;
+}
+
+.administrator .rectangle-2 {
+  background-color: #ffffff4c;
+  border-radius: 100px;
+  height: 50px;
+  left: 13px;
+  position: absolute;
+  top: 191px;
+  width: 279px;
+}
+
+.administrator .group-6 {
+  background-color: #fdc300;
+  border-radius: 29.5px;
+  height: 59px;
+  left: 129px;
+  position: absolute;
+  top: 10px;
+  width: 59px;
+}
+
+.administrator .ruta-n-2 {
+  height: 28px;
+  left: 13px;
+  position: absolute;
+  top: 15px;
+  width: 34px;
+}
+
+.administrator .my-team {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 62px;
+  letter-spacing: 0;
+  line-height: 21.7px;
+  position: absolute;
+  top: 268px;
+  white-space: nowrap;
+}
+
+.administrator .employee-management {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  left: 59px;
+  letter-spacing: 0;
+  line-height: 21.7px;
+  position: absolute;
+  top: 204px;
+  white-space: nowrap;
+}
+
+.administrator .team {
+  height: 21px;
+  left: 27px;
+  position: absolute;
+  top: 269px;
+  width: 25px;
+}
+
+.administrator .dashboard {
+  height: 18px;
+  left: 27px;
+  position: absolute;
+  top: 207px;
+  width: 18px;
+}
+
+.administrator .rectangle-3 {
+  background-color: #2db2a0;
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.administrator .rectangle-4 {
+  background-color: #b7faf1;
+  height: 6px;
+  left: 0;
+  position: absolute;
+  top: 12px;
+  width: 8px;
+}
+
+.administrator .rectangle-5 {
+  background-color: #2db2a0;
+  height: 10px;
+  left: 10px;
+  position: absolute;
+  top: 8px;
+  width: 8px;
+}
+
+.administrator .rectangle-6 {
+  background-color: #b7faf1;
+  height: 7px;
+  left: 10px;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.administrator .toolkit {
+  height: 20px;
+  left: 27px;
+  position: absolute;
+  top: 334px;
+  width: 18px;
+}
+
+.administrator .overlap-4 {
+  height: 20px;
+  position: relative;
+}
+
+.administrator .vector-3 {
+  height: 19px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 14px;
+}
+
+.administrator .subtract {
+  height: 11px;
+  left: 7px; /*change from 7*/
+  position: absolute;
+  top: 9px; /*change from 9*/
+  width: 11px;
+}
+
+.administrator .analytics {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 58px;
+  letter-spacing: 0;
+  line-height: 21.7px;
+  position: absolute;
+  top: 332px;
+  white-space: nowrap;
+}
+
+.administrator .overlap-5 {
+  background-color: #59afa0;
+  height: 54px;
+  left: 304px;
+  position: absolute;
+  top: 0;
+  width: 976px;
+}
+
+.administrator .switch-off {
+  height: 23px;
+  left: 844px;
+  position: absolute;
+  top: 15px;
+  width: 75px;
+}
+
+.administrator .text-wrapper-13 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 55px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: -1px;
+}
+
+.administrator .oval-copy-wrapper {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/rectangle-copy-3@2x.png);
+  background-size: 100% 100%;
+  height: 23px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 48px;
+}
+
+.administrator .oval-copy {
+  height: 23px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 23px;
+}
+
+.administrator .text-wrapper-14 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 808px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 14px;
+}
+
+.administrator .users {
+  height: 28px;
+  left: 932px;
+  position: absolute;
+  top: 13px;
+  width: 28px;
+}
+
+.administrator .rectangle-7 {
+  height: 37px;
+  left: 2108px;
+  position: absolute;
+  top: -70px;
+  width: 37px;
+}
