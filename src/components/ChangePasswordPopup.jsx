@@ -1,123 +1,34 @@
-import React, { useState } from 'react';
-import X from '../assets/X.png';
+import React from 'react';
+import './ChangePasswordPopup.css';
 import personIcon from '../assets/personIcon.png';
-import ConfirmPasswordPopup from './ConfirmPasswordPopup';
 
-
-export default function ChangePasswordPopup({ handleClose }) {
-  const [isConfirmPopupOpen, setIsConfirmPopupOpen] = useState(false);
-
-  return (
-    <div style={{
-      position: 'fixed',
-      top: '0',
-      left: '0',
-      width: '100vw',
-      height: '100vh',
-      backgroundColor: 'rgba(0, 0, 0, 0.7)',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      zIndex: '1000',
-    }}>
-    <div style={{
-      position: 'absolute',
-      top: '50%',
-      left: '50%',
-      transform: 'translate(-50%, -50%)',
-      backgroundColor: '#FFF',
-      padding: '10%',
-      zIndex: '1000',
-      fontFamily: '"Poppins", "Helvetica"',
-      color: '#2db2a0',
-      width: '901px', 
-      height: '442px', 
-      overflowY: 'auto', 
-      boxSizing: 'border-box',
-    }}>
-      {/* Close button */}
-      <img 
-        src={X} 
-        alt='X button' 
-        onClick={handleClose}
-        style={{
-          position: 'absolute', 
-          top: '3%', 
-          right: '3%', 
-        }}
-      />
-      <div style={{ display: 'flex', flexDirection: 'row'}}>
-        {/* Flexbox for Name and image */}
-        <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '5%', marginTop: '0%', justifyContent: 'center'}}> 
-            <img src={personIcon} alt='Profile' style={{ width: '150px', height: '150px' }}/>
-            <h2 style={{
-              fontSize: '2rem', 
-              fontWeight: 'normal',
-              color: '#2db2a0', 
-              }}>Name</h2>
-        </div>
-          {/* Flexbox for textboxes */}
-          <div style={{ display: 'flex', flexDirection: 'column', marginRight: '20%', justifyContent: "space-between"}}>
-              <div style={{ display: 'flex', flexDirection: 'row', justifyContent: "space-between"}}>
-                <div style={{
-                  fontFamily: '"Poppins", "Helvetica"',
-                  fontSize: '30',
-                  fontWeight: 'normal',
-                }}>
-                  <h1>My Email</h1>
+const ChangePasswordPopup = () => {
+    return (
+        <div className="change-password-popup">
+          <div className="column"> 
+              <img className='person-icon' src={personIcon} alt='Profile'/>
+              <h2 className='name'>Name</h2>
+          </div>
+          <div className="column-right">
+              <div className='flex-container'>
+                <div className='email'>
+                  <h3>My Email</h3>
                 </div>
                 <div>
-                  <input 
-                  type="text" 
-                  style={{ 
-                    width: '211px',   
-                    height: '48px',       
-                    fontSize: '1rem', 
-                    marginLeft: '46%',
-                    boxShadow: '0px 4px 4px' 
-                  }} 
-                />
+                  <input className='input1' type="text"/>
                 </div>
               </div>
-              <div style={{ display: 'flex', flexDirection: 'row', justifyContent: "space-between"}}>
-              <div style={{
-                  fontFamily: '"Poppins", "Helvetica"',
-                  fontSize: '30',
-                  fontWeight: 'normal',
-                }}>
-                  <h1>My Password</h1>
+              <div className='flex-container2'>
+                <div className='password'>
+                  <h3>My Password</h3>
                 </div>
                 <div>
-                  <input 
-                  type="text" 
-                  style={{ 
-                    width: '211px',   
-                    height: '48px',       
-                    fontSize: '1rem', 
-                    marginLeft: '46%',
-                    boxShadow: '0px 4px 4px' 
-                  }} 
-                />
+                  <input className='input2' type="text"/>
                 </div>
               </div>
           </div>
-      </div>
-      <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            marginTop: '5%',
-          }}>
-      {/* Change password button */}
-      <button onClick={() => setIsConfirmPopupOpen(true)} style={{
-                fontSize: '1rem', 
-                backgroundColor: '#2db2a0',
-                color: '#ffffff',
-                width: '150px', 
-                height: '50px', 
-      }}>Change Password</button>
-      {isConfirmPopupOpen && <ConfirmPasswordPopup handleClose={() => setIsConfirmPopupOpen(false)}/> }
-      </div>
-    </div>
-    </div>
-  );
+        </div>
+    );
 }
+
+export default ChangePasswordPopup;

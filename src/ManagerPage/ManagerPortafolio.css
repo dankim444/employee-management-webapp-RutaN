@@ -1,5 +1,5 @@
 
-.administrator {
+.manager-portafolio {
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -7,96 +7,96 @@
     width: 100%;
   }
   
-  .administrator .div {
+  .manager-portafolio .div {
     background-color: #ffffff;
     border: 1px none;
     height: 832px;
     overflow: hidden;
     position: relative;
-    width: 1280px;
+    width: 100%;
   }
   
-  .administrator .overlap {
-    height: 833px;
+  .manager-portafolio .overlap {
+    height: 832px;
     left: 0;
     position: absolute;
-    top: -1px;
+    top: 0;
     width: 1280px;
   }
   
-  .administrator .rectangle {
+  .manager-portafolio .rectangle {
     background-color: #dcf6f3;
     height: 778px;
     left: 303px;
     position: absolute;
-    top: 53px;
+    top: 52px;
     width: 976px;
   }
   
-  .administrator .rectangle-2 {
+  .manager-portafolio .rectangle-2 {
     background-color: #59afa0;
     height: 832px;
     left: 0;
     position: absolute;
-    top: 1px;
+    top: 0;
     width: 304px;
   }
   
-  .administrator .logo-rutan {
+  .manager-portafolio .logo-rutan {
     height: 71px;
     left: 90px;
     position: absolute;
-    top: 745px;
+    top: 744px;
     width: 125px;
   }
   
-  .administrator .mask-group {
+  .manager-portafolio .mask-group {
     height: 832px;
     left: 0;
     position: absolute;
-    top: 1px;
+    top: 0;
     width: 304px;
   }
   
-  .administrator .rectangle-3 {
+  .manager-portafolio .rectangle-3 {
     background-color: #59afa0;
     height: 54px;
     left: 304px;
     position: absolute;
-    top: 1px;
+    top: 0;
     width: 976px;
   }
   
-  .administrator .home {
+  .manager-portafolio .home {
     color: #ffffff;
     font-family: "Poppins", Helvetica;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     left: 60px;
     letter-spacing: 0;
     line-height: 21.7px;
     position: absolute;
-    top: 144px;
+    top: 143px;
     white-space: nowrap;
   }
   
-  .administrator .home-miruta {
+  .manager-portafolio .home-miruta {
     height: 19px;
     left: 27px;
     position: absolute;
-    top: 145px;
+    top: 144px;
     width: 19px;
   }
   
-  .administrator .switch-off {
+  .manager-portafolio .switch-off {
     height: 23px;
     left: 1148px;
     position: absolute;
-    top: 16px;
+    top: 15px;
     width: 75px;
   }
   
-  .administrator .text-wrapper {
+  .manager-portafolio .text-wrapper {
     color: #ffffff;
     font-family: "Poppins", Helvetica;
     font-size: 16px;
@@ -105,10 +105,10 @@
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: -1px;
+    top: 1px;
   }
   
-  .administrator .overlap-group {
+  .manager-portafolio .overlap-group {
     background-image: url(https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/rectangle-copy-3@2x.png);
     background-size: 100% 100%;
     height: 23px;
@@ -118,7 +118,7 @@
     width: 48px;
   }
   
-  .administrator .img {
+  .manager-portafolio .oval-copy {
     height: 23px;
     left: 0;
     position: absolute;
@@ -126,29 +126,29 @@
     width: 23px;
   }
   
-  .administrator .text-wrapper-2 {
+  .manager-portafolio .text-wrapper-2 {
     color: #ffffff;
     font-family: "Poppins", Helvetica;
     font-size: 16px;
     font-weight: 400;
-    left: 1112px;
+    left: 1104px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 15px;
+    top: 16px;
   }
   
-  .administrator .group {
+  .manager-portafolio .group {
     background-color: #fdc300;
     border-radius: 29.5px;
     height: 59px;
     left: 129px;
     position: absolute;
-    top: 11px;
+    top: 10px;
     width: 59px;
   }
   
-  .administrator .ruta-n {
+  .manager-portafolio .ruta-n {
     height: 28px;
     left: 13px;
     position: absolute;
@@ -156,108 +156,62 @@
     width: 34px;
   }
   
-  .administrator .rectangle-4 {
-    background-color: #ffffff4c;
-    border-radius: 100px;
+  .manager-portafolio .img {
+    height: 28px;
+    left: 13px;
+    position: absolute;
+    top: 15px;
+    width: 34px;
+  }
+  
+  .manager-portafolio .my-team {
+    position: absolute;
+    left: 4.84%;
+    right: 88.91%;
+    top: 25%;
+    bottom: 72.36%;
+    font-family: "Poppins", Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120.5%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  
+  .manager-portafolio .rectangle-88 {
+    position: absolute;
+    width: 285px;
     height: 50px;
     left: 12px;
-    position: absolute;
-    top: 257px;
-    width: 279px;
+    top: 195px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 100px;
+  
   }
   
-  .administrator .my-team {
-    color: #ffffff;
-    font-family: "Poppins", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    left: 62px;
-    letter-spacing: 0;
-    line-height: 21.7px;
+  .manager-portafolio .team {
     position: absolute;
-    top: 269px;
-    white-space: nowrap;
-  }
-  
-  .administrator .employee-management {
-    color: #ffffff;
-    font-family: "Poppins", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    left: 59px;
-    letter-spacing: 0;
-    line-height: 21.7px;
-    position: absolute;
-    top: 205px;
-    white-space: nowrap;
-  }
-  
-  .administrator .team {
+    width: 25px;
     height: 21px;
     left: 27px;
-    position: absolute;
-    top: 270px;
-    width: 25px;
-  }
-  
-  .administrator .dashboard {
-    height: 18px;
-    left: 27px;
-    position: absolute;
     top: 208px;
-    width: 18px;
   }
   
-  .administrator .rectangle-5 {
-    background-color: #2db2a0;
-    height: 10px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 8px;
-  }
-  
-  .administrator .rectangle-6 {
-    background-color: #b7faf1;
-    height: 6px;
-    left: 0;
-    position: absolute;
-    top: 12px;
-    width: 8px;
-  }
-  
-  .administrator .rectangle-7 {
-    background-color: #2db2a0;
-    height: 10px;
-    left: 10px;
-    position: absolute;
-    top: 8px;
-    width: 8px;
-  }
-  
-  .administrator .rectangle-8 {
-    background-color: #b7faf1;
-    height: 7px;
-    left: 10px;
-    position: absolute;
-    top: 0;
-    width: 8px;
-  }
-  
-  .administrator .toolkit {
+  .manager-portafolio .AnalyticsLogo {
     height: 20px;
     left: 27px;
     position: absolute;
-    top: 335px;
+    top: 271px;
     width: 18px;
   }
   
-  .administrator .overlap-2 {
+  .manager-portafolio .overlap-2 {
     height: 20px;
     position: relative;
   }
   
-  .administrator .vector {
+  .manager-portafolio .vector {
     height: 19px;
     left: 0;
     position: absolute;
@@ -265,7 +219,7 @@
     width: 14px;
   }
   
-  .administrator .subtract {
+  .manager-portafolio .subtract {
     height: 11px;
     left: 7px;
     position: absolute;
@@ -273,36 +227,30 @@
     width: 11px;
   }
   
-  .administrator .analytics {
-    color: #ffffff;
+  .manager-portafolio .analytics {
+    position: absolute;
+    left: 4.53%;
+    right: 87.89%;
+    top: 32.69%;
+    bottom: 64.66%;
     font-family: "Poppins", Helvetica;
-    font-size: 18px;
+    font-style: normal;
     font-weight: 500;
-    left: 58px;
-    letter-spacing: 0;
-    line-height: 21.7px;
-    position: absolute;
-    top: 333px;
-    white-space: nowrap;
+    font-size: 18px;
+    line-height: 120.5%;
+    text-transform: uppercase;
+    color: #FFFFFF;
   }
   
-  .administrator .users {
-    height: 28px;
-    left: 1236px;
-    position: absolute;
-    top: 14px;
-    width: 28px;
-  }
-  
-  .administrator .input {
+  .manager-portafolio .input {
     height: 50px;
     left: 352px;
     position: absolute;
-    top: 94px;
+    top: 93px;
     width: 320px;
   }
   
-  .administrator .input-text-en-fondo-wrapper {
+  .manager-portafolio .input-text-en-fondo-wrapper {
     background-image: url(https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/rectangle-copy-7-3@2x.png);
     background-size: 100% 100%;
     height: 51px;
@@ -310,7 +258,7 @@
     width: 321px;
   }
   
-  .administrator .input-text-en-fondo {
+  .manager-portafolio .input-text-en-fondo {
     color: #3e3e3e;
     font-family: "Poppins", Helvetica;
     font-size: 17px;
@@ -323,7 +271,7 @@
     top: 14px;
   }
   
-  .administrator .table-footer {
+  .manager-portafolio .table-footer {
     align-items: center;
     display: flex;
     gap: 26px;
@@ -332,18 +280,18 @@
     left: 639px;
     padding: 0px 10px 0px 0px;
     position: absolute;
-    top: 745px;
+    top: 744px;
     width: 342px;
   }
   
-  .administrator .paginador {
+  .manager-portafolio .paginador {
     height: 42px;
     margin-left: -15px;
     min-width: 347px;
     position: relative;
   }
   
-  .administrator .div-wrapper {
+  .manager-portafolio .div-wrapper {
     background-image: url(https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/oval@2x.png);
     background-size: 100% 100%;
     height: 40px;
@@ -353,7 +301,7 @@
     width: 40px;
   }
   
-  .administrator .text-wrapper-3 {
+  .manager-portafolio .text-wrapper-3 {
     color: #2db2a0;
     font-family: "Poppins", Helvetica;
     font-size: 20px;
@@ -365,7 +313,7 @@
     top: 5px;
   }
   
-  .administrator .text-wrapper-4 {
+  .manager-portafolio .text-wrapper-4 {
     color: #3e3e3e;
     font-family: "Poppins", Helvetica;
     font-size: 20px;
@@ -377,7 +325,7 @@
     top: 7px;
   }
   
-  .administrator .text-wrapper-5 {
+  .manager-portafolio .text-wrapper-5 {
     color: #3e3e3e;
     font-family: "Poppins", Helvetica;
     font-size: 20px;
@@ -389,7 +337,7 @@
     top: 7px;
   }
   
-  .administrator .text-wrapper-6 {
+  .manager-portafolio .text-wrapper-6 {
     color: #3e3e3e;
     font-family: "Poppins", Helvetica;
     font-size: 20px;
@@ -401,7 +349,7 @@
     top: 7px;
   }
   
-  .administrator .text-wrapper-7 {
+  .manager-portafolio .text-wrapper-7 {
     color: #3e3e3e;
     font-family: "Poppins", Helvetica;
     font-size: 20px;
@@ -413,7 +361,7 @@
     top: 7px;
   }
   
-  .administrator .group-2 {
+  .manager-portafolio .group-2 {
     height: 50px;
     left: 303px;
     position: absolute;
@@ -421,7 +369,7 @@
     width: 50px;
   }
   
-  .administrator .group-3 {
+  .manager-portafolio .group-3 {
     height: 50px;
     left: -6px;
     position: absolute;
@@ -429,15 +377,15 @@
     width: 50px;
   }
   
-  .administrator .group-4 {
+  .manager-portafolio .group-4 {
     height: 25px;
     left: 352px;
     position: absolute;
-    top: 176px;
+    top: 175px;
     width: 366px;
   }
   
-  .administrator .text-wrapper-8 {
+  .manager-portafolio .text-wrapper-8 {
     color: #3e3e3e;
     font-family: "Poppins", Helvetica;
     font-size: 16px;
@@ -446,10 +394,18 @@
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 1px;
+    top: 3px;
   }
   
-  .administrator .overlap-3 {
+  .manager-portafolio .ellipse {
+    height: 23px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 23px;
+  }
+  
+  .manager-portafolio .overlap-3 {
     height: 23px;
     left: 88px;
     position: absolute;
@@ -457,7 +413,7 @@
     width: 276px;
   }
   
-  .administrator .radiobtn {
+  .manager-portafolio .radiobtn {
     height: 23px;
     left: 0;
     position: absolute;
@@ -465,7 +421,7 @@
     width: 142px;
   }
   
-  .administrator .text-wrapper-9 {
+  .manager-portafolio .text-wrapper-9 {
     color: #3e3e3e;
     font-family: "Poppins", Helvetica;
     font-size: 16px;
@@ -474,10 +430,18 @@
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 0;
+    top: 3px;
   }
   
-  .administrator .radiobtn-2 {
+  .manager-portafolio .ellipse-2 {
+    height: 23px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 23px;
+  }
+  
+  .manager-portafolio .radiobtn-2 {
     height: 23px;
     left: 134px;
     position: absolute;
@@ -485,27 +449,35 @@
     width: 142px;
   }
   
-  .administrator .text-wrapper-10 {
-    color: #2db2a0;
+  .manager-portafolio .text-wrapper-10 {
+    color: #3e3e3e;
     font-family: "Poppins", Helvetica;
     font-size: 16px;
     font-weight: 300;
-    left: 32px;
+    left: 30px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: -1px;
+    top: 3px;
   }
   
-  .administrator .group-5 {
+  .manager-portafolio .ellipse-3 {
+    height: 23px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 23px;
+  }
+  
+  .manager-portafolio .group-5 {
     height: 29px;
     left: 1114px;
     position: absolute;
-    top: 206px;
+    top: 205px;
     width: 124px;
   }
   
-  .administrator .text-wrapper-11 {
+  .manager-portafolio .text-wrapper-11 {
     color: #2db2a0;
     font-family: "Poppins", Helvetica;
     font-size: 16px;
@@ -517,7 +489,7 @@
     top: 5px;
   }
   
-  .administrator .vector-wrapper {
+  .manager-portafolio .vector-wrapper {
     background-color: #b7faf1;
     border-radius: 14.5px;
     height: 29px;
@@ -527,7 +499,7 @@
     width: 29px;
   }
   
-  .administrator .vector-2 {
+  .manager-portafolio .vector-2 {
     height: 14px;
     left: 8px;
     position: absolute;
@@ -535,17 +507,17 @@
     width: 14px;
   }
   
-  .administrator .group-wrapper {
+  .manager-portafolio .group-wrapper {
     background-color: #6fd7c9;
     box-shadow: 0px 4px 4px #00000040;
     height: 457px;
     left: 336px;
     position: absolute;
-    top: 252px;
+    top: 251px;
     width: 909px;
   }
   
-  .administrator .group-6 {
+  .manager-portafolio .group-6 {
     height: 335px;
     left: 37px;
     position: relative;
@@ -553,8 +525,7 @@
     width: 839px;
   }
   
-  .administrator .overlap-4 {
-    border-radius: 4px;
+  .manager-portafolio .overlap-4 {
     height: 72px;
     left: 0;
     position: absolute;
@@ -562,26 +533,22 @@
     width: 264px;
   }
   
-  .administrator .img-wrapper {
+  .manager-portafolio .card-wrapper {
+    height: 72px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 264px;
+  }
+  
+  .manager-portafolio .card {
     background-color: #ffffff;
     border-radius: 4px;
     box-shadow: 0px 6px 10px #00000029;
     height: 72px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 264px;
   }
   
-  .administrator .vector-3 {
-    height: 14px;
-    left: 245px;
-    position: absolute;
-    top: 29px;
-    width: 3px;
-  }
-  
-  .administrator .group-7 {
+  .manager-portafolio .img-wrapper {
     background-color: #b7faf1;
     border-radius: 28.16px/28px;
     height: 56px;
@@ -591,7 +558,7 @@
     width: 56px;
   }
   
-  .administrator .group-8 {
+  .manager-portafolio .group-7 {
     height: 35px;
     left: 11px;
     position: absolute;
@@ -599,8 +566,10 @@
     width: 35px;
   }
   
-  .administrator .overlap-5 {
+  .manager-portafolio .overlap-5 {
+    background-color: #ffffff;
     border-radius: 4px;
+    box-shadow: 0px 6px 10px #00000029;
     height: 72px;
     left: 0;
     position: absolute;
@@ -608,8 +577,28 @@
     width: 264px;
   }
   
-  .administrator .overlap-6 {
+  .manager-portafolio .group-8 {
+    background-color: #b7faf1;
+    border-radius: 28.16px/28px;
+    height: 56px;
+    left: 8px;
+    position: relative;
+    top: 8px;
+    width: 56px;
+  }
+  
+  .manager-portafolio .group-9 {
+    height: 35px;
+    left: 11px;
+    position: absolute;
+    top: 12px;
+    width: 35px;
+  }
+  
+  .manager-portafolio .overlap-6 {
+    background-color: #ffffff;
     border-radius: 4px;
+    box-shadow: 0px 6px 10px #00000029;
     height: 72px;
     left: 0;
     position: absolute;
@@ -617,8 +606,28 @@
     width: 264px;
   }
   
-  .administrator .overlap-7 {
+  .manager-portafolio .group-10 {
+    background-color: #b7faf1;
+    border-radius: 28.16px/28px;
+    height: 56px;
+    left: 8px;
+    position: relative;
+    top: 8px;
+    width: 56px;
+  }
+  
+  .manager-portafolio .group-11 {
+    height: 35px;
+    left: 11px;
+    position: absolute;
+    top: 12px;
+    width: 35px;
+  }
+  
+  .manager-portafolio .overlap-7 {
+    background-color: #ffffff;
     border-radius: 4px;
+    box-shadow: 0px 6px 10px #00000029;
     height: 72px;
     left: 0;
     position: absolute;
@@ -626,18 +635,28 @@
     width: 264px;
   }
   
-  .administrator .group-9 {
+  .manager-portafolio .group-12 {
     background-color: #b7faf1;
     border-radius: 28.16px/28px;
     height: 56px;
     left: 11px;
-    position: absolute;
+    position: relative;
     top: 9px;
     width: 56px;
   }
   
-  .administrator .overlap-8 {
+  .manager-portafolio .group-13 {
+    height: 35px;
+    left: 11px;
+    position: absolute;
+    top: 12px;
+    width: 35px;
+  }
+  
+  .manager-portafolio .overlap-8 {
+    background-color: #ffffff;
     border-radius: 4px;
+    box-shadow: 0px 6px 10px #00000029;
     height: 72px;
     left: 287px;
     position: absolute;
@@ -645,18 +664,28 @@
     width: 264px;
   }
   
-  .administrator .group-10 {
+  .manager-portafolio .group-14 {
     background-color: #b7faf1;
     border-radius: 28.16px/28px;
     height: 56px;
     left: 7px;
-    position: absolute;
+    position: relative;
     top: 8px;
     width: 56px;
   }
   
-  .administrator .overlap-9 {
+  .manager-portafolio .group-15 {
+    height: 35px;
+    left: 11px;
+    position: absolute;
+    top: 12px;
+    width: 35px;
+  }
+  
+  .manager-portafolio .overlap-9 {
+    background-color: #ffffff;
     border-radius: 4px;
+    box-shadow: 0px 6px 10px #00000029;
     height: 72px;
     left: 287px;
     position: absolute;
@@ -664,8 +693,28 @@
     width: 264px;
   }
   
-  .administrator .overlap-10 {
+  .manager-portafolio .group-16 {
+    background-color: #b7faf1;
+    border-radius: 28.16px/28px;
+    height: 56px;
+    left: 7px;
+    position: relative;
+    top: 8px;
+    width: 56px;
+  }
+  
+  .manager-portafolio .group-17 {
+    height: 35px;
+    left: 11px;
+    position: absolute;
+    top: 12px;
+    width: 35px;
+  }
+  
+  .manager-portafolio .overlap-10 {
+    background-color: #ffffff;
     border-radius: 4px;
+    box-shadow: 0px 6px 10px #00000029;
     height: 72px;
     left: 287px;
     position: absolute;
@@ -673,8 +722,28 @@
     width: 264px;
   }
   
-  .administrator .overlap-11 {
+  .manager-portafolio .group-18 {
+    background-color: #b7faf1;
+    border-radius: 28.16px/28px;
+    height: 56px;
+    left: 7px;
+    position: relative;
+    top: 8px;
+    width: 56px;
+  }
+  
+  .manager-portafolio .group-19 {
+    height: 35px;
+    left: 11px;
+    position: absolute;
+    top: 12px;
+    width: 35px;
+  }
+  
+  .manager-portafolio .overlap-11 {
+    background-color: #ffffff;
     border-radius: 4px;
+    box-shadow: 0px 6px 10px #00000029;
     height: 72px;
     left: 287px;
     position: absolute;
@@ -682,18 +751,28 @@
     width: 264px;
   }
   
-  .administrator .group-11 {
+  .manager-portafolio .group-20 {
     background-color: #b7faf1;
     border-radius: 28.16px/28px;
     height: 56px;
     left: 10px;
-    position: absolute;
+    position: relative;
     top: 9px;
     width: 56px;
   }
   
-  .administrator .overlap-12 {
+  .manager-portafolio .group-21 {
+    height: 35px;
+    left: 11px;
+    position: absolute;
+    top: 12px;
+    width: 35px;
+  }
+  
+  .manager-portafolio .overlap-12 {
+    background-color: #ffffff;
     border-radius: 4px;
+    box-shadow: 0px 6px 10px #00000029;
     height: 72px;
     left: 575px;
     position: absolute;
@@ -701,18 +780,28 @@
     width: 264px;
   }
   
-  .administrator .group-12 {
+  .manager-portafolio .group-22 {
     background-color: #b7faf1;
     border-radius: 28.16px/28px;
     height: 56px;
     left: 11px;
-    position: absolute;
+    position: relative;
     top: 8px;
     width: 56px;
   }
   
-  .administrator .overlap-13 {
+  .manager-portafolio .group-23 {
+    height: 35px;
+    left: 11px;
+    position: absolute;
+    top: 12px;
+    width: 35px;
+  }
+  
+  .manager-portafolio .overlap-13 {
+    background-color: #ffffff;
     border-radius: 4px;
+    box-shadow: 0px 6px 10px #00000029;
     height: 72px;
     left: 575px;
     position: absolute;
@@ -720,8 +809,28 @@
     width: 264px;
   }
   
-  .administrator .overlap-14 {
+  .manager-portafolio .group-24 {
+    background-color: #b7faf1;
+    border-radius: 28.16px/28px;
+    height: 56px;
+    left: 11px;
+    position: relative;
+    top: 8px;
+    width: 56px;
+  }
+  
+  .manager-portafolio .group-25 {
+    height: 35px;
+    left: 11px;
+    position: absolute;
+    top: 12px;
+    width: 35px;
+  }
+  
+  .manager-portafolio .overlap-14 {
+    background-color: #ffffff;
     border-radius: 4px;
+    box-shadow: 0px 6px 10px #00000029;
     height: 72px;
     left: 575px;
     position: absolute;
@@ -729,8 +838,28 @@
     width: 264px;
   }
   
-  .administrator .overlap-15 {
+  .manager-portafolio .group-26 {
+    background-color: #b7faf1;
+    border-radius: 28.16px/28px;
+    height: 56px;
+    left: 11px;
+    position: relative;
+    top: 8px;
+    width: 56px;
+  }
+  
+  .manager-portafolio .group-27 {
+    height: 35px;
+    left: 11px;
+    position: absolute;
+    top: 12px;
+    width: 35px;
+  }
+  
+  .manager-portafolio .overlap-15 {
+    background-color: #ffffff;
     border-radius: 4px;
+    box-shadow: 0px 6px 10px #00000029;
     height: 72px;
     left: 575px;
     position: absolute;
@@ -738,26 +867,34 @@
     width: 264px;
   }
   
-  .administrator .group-13 {
+  .manager-portafolio .group-28 {
     background-color: #b7faf1;
     border-radius: 28.16px/28px;
     height: 56px;
     left: 14px;
-    position: absolute;
+    position: relative;
     top: 9px;
     width: 56px;
   }
   
-  .administrator .rectangle-9 {
+  .manager-portafolio .group-29 {
+    height: 35px;
+    left: 11px;
+    position: absolute;
+    top: 12px;
+    width: 35px;
+  }
+  
+  .manager-portafolio .rectangle-9 {
     background-color: #b7faf1;
     height: 36px;
     left: 707px;
     position: absolute;
-    top: 101px;
+    top: 100px;
     width: 85px;
   }
   
-  .administrator .text-wrapper-12 {
+  .manager-portafolio .text-wrapper-12 {
     color: #2db2a0;
     font-family: "Poppins", Helvetica;
     font-size: 16px;
@@ -767,173 +904,23 @@
     line-height: normal;
     position: absolute;
     text-align: center;
-    top: 106px;
+    top: 108px;
     width: 64px;
   }
   
-  .administrator .rectangle-10 {
-    background-color: #00000099;
-    height: 832px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1280px;
-  }
-  
-  .administrator .overlap-wrapper {
-    height: 570px;
-    left: 227px;
-    position: absolute;
-    top: 145px;
-    width: 885px;
-  }
-  
-  .administrator .overlap-16 {
-    height: 570px;
-    position: relative;
-    width: 889px;
-  }
-  
-  .administrator .overlap-group-wrapper {
-    height: 570px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 889px;
-  }
-  
-  .administrator .overlap-group-2 {
-    background-color: #ffffff;
-    border: 2px solid;
-    border-color: #dddddd;
-    box-shadow: 0px 4px 4px #00000040;
-    height: 570px;
-    position: relative;
-    width: 885px;
-  }
-  
-  .administrator .flex-container {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    height: 428px;
-    left: 389px;
-    position: absolute;
-    top: 80px;
-    width: 245px;
-  }
-  
-  .administrator .text {
-    color: #2c8172;
-    font-family: "Poppins", Helvetica;
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: normal;
-    position: relative;
-    width: 245px;
-  }
-  
-  .administrator .span {
-    font-weight: 700;
-  }
-  
-  .administrator .text-wrapper-13 {
-    color: #2c8172;
-    font-family: "Poppins", Helvetica;
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 0;
-  }
-  
-  .administrator .span-wrapper {
-    color: #2c8172;
-    font-family: "Poppins", Helvetica;
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: normal;
-    position: relative;
-    white-space: nowrap;
-    width: 245px;
-  }
-  
-  .administrator .h-1 {
-    color: #2c8172;
-    font-family: "Poppins", Helvetica;
-    font-size: 32px;
-    font-weight: 500;
-    left: 32px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 334px;
-    width: 234px;
-  }
-  
-  .administrator .group-14 {
-    background-color: #ffffff;
-    border-radius: 86.5px/86px;
-    box-shadow: 0px 4px 4px #00000040;
-    height: 172px;
-    left: 62px;
-    position: absolute;
-    top: 155px;
-    width: 173px;
-  }
-  
-  .administrator .group-15 {
-    height: 102px;
-    left: 34px;
-    position: absolute;
-    top: 38px;
-    width: 103px;
-  }
-  
-  .administrator .path {
-    height: 26px;
-    left: 829px;
-    position: absolute;
-    top: 24px;
-    width: 26px;
-  }
-  
-  .administrator .settings {
-    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/subtract@2x.png);
-    background-size: 100% 100%;
-    box-shadow: 0px 4px 4px #00000040;
-    height: 36px;
-    left: 775px;
-    position: absolute;
-    top: 18px;
-    width: 34px;
-  }
-  
-  .administrator .ellipse {
-    background-color: #2db2a0;
-    border-radius: 3.58px/3.6px;
-    height: 7px;
-    left: 14px;
-    position: relative;
-    top: 14px;
-    width: 7px;
-  }
-  
-  .administrator .rectangle-11 {
+  .manager-portafolio .rectangle-10 {
     height: 37px;
-    left: -3276px;
+    left: -3131px;
     position: absolute;
-    top: -2585px;
+    top: -70px;
     width: 37px;
   }
   
-  .administrator .ellipse-2 {
+  .manager-portafolio .ellipse-4 {
     height: 100px;
-    left: -4441px;
+    left: -4296px;
     position: absolute;
-    top: -2555px;
+    top: -40px;
     width: 100px;
   }
   

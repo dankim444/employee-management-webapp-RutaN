@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./AdminPortafolio.css";
+import "./ManagerPortafolio.css";
 import IndividualInfo from '../components/IndividualInfo';
 import FilterButton from'../components/FilterButton';
 import {Switch} from "antd";
 import UserDropdown from "../components/UserDropdown";
 
-export const AdministratorPortafolio = () => {
+export const ManagerPortafolio = () => {
   const navigate = useNavigate();
   const [isPopup1Open, setPopup1Open] = useState(false);
   const [isPopup2Open, setPopup2Open] = useState(false);
@@ -30,23 +30,19 @@ export const AdministratorPortafolio = () => {
   };
 
   const navigateToHome = () => {
-    navigate("/AdminHome");
-  };
-
-  const navigateToEmployeeManagement = () => {
-    navigate("/AdminEmployeeMgmt");
+    navigate("/ManagerHome");
   };
 
   const navigateToMyTeam = () => {
-    navigate("/AdminPortafolio");
+    navigate("/ManagerPortafolio");
   };
 
   const navigateToAnalytics = () => {
-    navigate("/AdminAnalytics");
+    navigate("/ManagerAnalytics");
   };
 
   return (
-    <div className="administrator-my">
+    <div className="manager-portafolio">
       <div className="div">
         <div className="overlap">
 
@@ -83,19 +79,6 @@ export const AdministratorPortafolio = () => {
             alt="Home miruta"
             src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/home-miruta@2x.png"
           />
-          <div 
-            className="employee-management"
-            onClick={navigateToEmployeeManagement}
-            style={{ cursor: "pointer" }}
-          >
-            EMPLOYEE MANAGEMENT
-          </div>
-          <div className="EmployeeMgmtLogo">
-            <div className="rectangle-5" />
-            <div className="rectangle-6" />
-            <div className="rectangle-7" />
-            <div className="rectangle-8" />
-          </div>
           <div className="rectangle-88"/>
           <div 
             className="my-team"

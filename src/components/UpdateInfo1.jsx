@@ -1,13 +1,15 @@
 import React from "react";
+import './UpdateInfo1.css';
 import personIcon from '../assets/personIcon.png';
 import X from '../assets/X.png';
+
 
 // This is the PopUp component that allows you to update individual information from the home page
 export default function UpdateInfo1({ isOpen, handleClose }) {
     if (!isOpen) return null;
   
     return (
-      <div style={{
+      <div className="update-info" style={{
         position: 'relative',
         top: '50%',
         left: '50%',
@@ -42,7 +44,7 @@ export default function UpdateInfo1({ isOpen, handleClose }) {
         <div style={{ display: 'flex', flexDirection: 'row'}}>
   
           {/* Flexbox for Name and image */}
-          <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '10%', marginTop: '5%', justifyContent: "center"}}> 
+          <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '10%', marginTop: '5%', justifyContent: "center", alignItems: 'center'}}> 
               <img src={personIcon} alt='Profile' style={{ width: '150px', height: '150px' }}/>
               <h2 style={{
                 fontSize: '2rem', 

@@ -1,0 +1,15 @@
+.dropdown-item {
+    /* initial styles for the dropdown items */
+    background-color: white;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    /* styles for the dropdown items when hovered */
+    background-color: #2db2a0; /* change the color as per your need */
+    color: white;
+  }
+  

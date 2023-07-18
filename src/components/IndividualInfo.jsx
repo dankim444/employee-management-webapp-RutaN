@@ -81,7 +81,7 @@ export default function PopUp1({ isOpen, handleClose, handleOpenPopup2 }) {
   
           {/* Flexbox for tags */}
           <div>
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginLeft: '75%'}}> 
+            <div style={{ marginLeft: '75%'}}> 
               <p style={{fontSize: '15', marginBottom: '1px', fontWeight: 'bold'}}>TYPE:</p>
               <p style={{fontSize: '15', marginBottom: '1px', fontWeight: 'bold'}}>PORTAFOLIO:</p>
               <p style={{fontSize: '15', marginBottom: '1px', fontWeight: 'bold'}}>IDENTIFICACIÓN:</p>

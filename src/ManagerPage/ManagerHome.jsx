@@ -1,31 +1,27 @@
 import React from 'react';
-import './AdminHome.css';
+import './ManagerHome.css';
 import { useNavigate } from "react-router-dom";
 import {Switch} from "antd";
 import UserDropdown from "../components/UserDropdown";
 import HomeInfo from '../components/HomeInfo';
 
-export const AdministratorHome = () => {
+export const ManagerHome = () => {
     const navigate = useNavigate();
 
     const navigateToHome = () => {
-        navigate("/AdminHome");
-    };
-
-    const navigateToEmployeeManagement = () => {
-        navigate("/AdminEmployeeMgmt");
+        navigate("/ManagerHome");
     };
 
     const navigateToMyTeam = () => {
-        navigate("/AdminPortafolio");
+        navigate("/ManagerPortafolio");
     };
 
     const navigateToAnalytics = () => {
-        navigate("/AdminAnalytics");
+        navigate("/ManagerAnalytics");
     };
 
     return (
-        <div className='administrator-home1'>
+        <div className='manager-home'>
             <div className='div'>
                 <div className='overlap'>
 
@@ -63,19 +59,6 @@ export const AdministratorHome = () => {
                         alt="Home miruta"
                         src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/home-miruta@2x.png"
                     />
-                    <div 
-                        className="employee-management"
-                        onClick={navigateToEmployeeManagement}
-                        style={{ cursor: "pointer" }}
-                    >
-                        EMPLOYEE MANAGEMENT
-                    </div>
-                    <div className="EmployeeMgmtLogo">
-                        <div className="rectangle-5" />
-                        <div className="rectangle-6" />
-                        <div className="rectangle-7" />
-                        <div className="rectangle-8" />
-                    </div>
                     <div 
                         className="my-team"
                         onClick={navigateToMyTeam}
@@ -130,7 +113,7 @@ export const AdministratorHome = () => {
 
                     {/* My Information tab */}
                     <div className="text-wrapper-3">My Information</div>
-                    <HomeInfo />
+                    <HomeInfo/>
                     
                 </div>
             </div>

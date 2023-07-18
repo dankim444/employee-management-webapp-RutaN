@@ -1,28 +1,39 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./AdminEmployeeMgmt.css";
+import FilterButton from'../components/FilterButton';
+import {Switch} from "antd";
+import UserDropdown from "../components/UserDropdown";
+import FilterDropdown from "../components/FilterDropdown";
+import Table from '../components/Table';
 
-export const Selection = () => {
-  return (
-    <div className="selection">
-      <div className="group-wrapper">
-        <div className="group">
-          <img className="img" alt="Group" src="group-5-2.png" />
-        </div>
-      </div>
-    </div>
-  );
-};
+const data = [
+  { NOMBRES: 'John', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'john@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+  { NOMBRES: 'John', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'john@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+  { NOMBRES: 'John', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'john@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+];
 
 export const AdministratorEmployeeManagement = () => {
   const navigate = useNavigate();
 
-  const navigateToEmployeeManagement = () => {
-    navigate("/AdminEmployeeMgmt");
-  };
-  
   const navigateToHome = () => {
     navigate("/AdminHome");
+  };
+
+  const navigateToEmployeeManagement = () => {
+    navigate("/AdminEmployeeMgmt");
   };
 
   const navigateToMyTeam = () => {
@@ -34,135 +45,36 @@ export const AdministratorEmployeeManagement = () => {
   };
 
   return (
-    <div className="administrator">
+    <div className="administrator-mgmt">
       <div className="div">
         <div className="overlap">
-          <div className="input">
-            <div
-              className="overlap-group"
-              style={{
-                backgroundImage:
-                  "url(https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/rectangle-copy-7-3@2x.png)",
-              }}
-            >
-              <div className="input-text-en-fondo">Buscar</div>
-            </div>
-          </div>
-          <div className="group">
-            <div className="text-wrapper">Filter</div>
-            <div className="overlap-group-wrapper">
-              <div className="overlap-group-2">
-                <div className="rectangle" />
-                <div className="text-wrapper-2">Select</div>
-                <img
-                  className="vector"
-                  alt="Vector"
-                  src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/6491d47caa096e7d87d02325/img/vector-8@2x.png"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="table-footer">
-            <div className="paginador">
-              <div
-                className="div-wrapper"
-                style={{
-                  backgroundImage:
-                    "url(https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/oval@2x.png)",
-                }}
-              >
-                <div className="text-wrapper-3">2</div>
-              </div>
-              <div className="text-wrapper-4">1</div>
-              <div className="text-wrapper-5">3</div>
-              <div className="text-wrapper-6">4</div>
-              <div className="text-wrapper-7">5</div>
-              <img
-                className="img"
-                alt="Group"
-                src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/group-136@2x.png"
-              />
-              <img
-                className="group-2"
-                alt="Group"
-                src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/group-137@2x.png"
-              />
-            </div>
-          </div>
-          <div className="text-wrapper-8">All</div>
-          <img
-            className="ellipse"
-            alt="Ellipse"
-            src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/ellipse-9-2@2x.png"
-          />
-          <div className="radiobtn">
-            <div className="text-wrapper-9">Employees</div>
-            <img
-              className="ellipse-2"
-              alt="Ellipse"
-              src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/ellipse-9-3@2x.png"
-            />
-          </div>
-          <div className="radiobtn-2">
-            <div className="text-wrapper-10">Contractors</div>
-            <img
-              className="ellipse-3"
-              alt="Ellipse"
-              src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/ellipse-10-1@2x.png"
-            />
-          </div>
-          <div className="group-3">
-            <div className="text-wrapper-11">Add Users</div>
-            <div className="vector-wrapper">
-              <img
-                className="vector-2"
-                alt="Vector"
-                src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/vector-5@2x.png"
-              />
-            </div>
-          </div>
-          <div className="group-wrapper">
-            <div className="group-4">
-              <div
-                className="img-wrapper"
-                style={{
-                  backgroundImage:
-                    "url(https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/employee-info-display--admin.png)",
-                }}
-              >
-                <img
-                  className="group-5"
-                  alt="Group"
-                  src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/group-219@2x.png"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="overlap-2">
-            <div className="text-wrapper-12">Export</div>
-          </div>
-        </div>
-        <div className="overlap-3">
+
+          {/* Dashboard */}
+          <div className="rectangle" />
+          <div className="rectangle-2" />
           <img
             className="logo-rutan"
             alt="Logo rutan"
-            src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/logo-rutan-6@2x.png"
+            src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/logo-rutan-4@2x.png"
           />
           <img
             className="mask-group"
             alt="Mask group"
-            src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/mask-group.png"
+            src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/mask-group-5.png"
           />
-          <img
-            className="mask-group-2"
-            alt="Mask group"
-            src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/mask-group.png"
-          />
+          <div className="rectangle-3" />
+          <div className="group">
+            <img
+              className="ruta-n"
+              alt="Ruta n"
+              src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/rutan-4@2x.png"
+            />
+          </div>
           <div 
             className="home"
             onClick={navigateToHome}
             style={{ cursor: "pointer" }}
-          > 
+          >
             HOME
           </div>
           <img
@@ -170,50 +82,43 @@ export const AdministratorEmployeeManagement = () => {
             alt="Home miruta"
             src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/home-miruta@2x.png"
           />
-          <div className="ruta-n-wrapper">
-            <img
-              className="ruta-n"
-              alt="Ruta n"
-              src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/rutan@2x.png"
-            />
+          <div className="rectangle-88"/>
+          <div 
+            className="employee-management"
+            onClick={navigateToEmployeeManagement}
+            style={{ cursor: "pointer" }}
+          >
+            EMPLOYEE MANAGEMENT
           </div>
-          <div className="rectangle-2" />
-          <div className="group-6">
-            <img
-              className="ruta-n-2"
-              alt="Ruta n"
-              src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/rutan@2x.png"
-            />
+          <div className="EmployeeMgmtLogo">
+            <div className="rectangle-5" />
+            <div className="rectangle-6" />
+            <div className="rectangle-7" />
+            <div className="rectangle-8" />
           </div>
           <div 
             className="my-team"
             onClick={navigateToMyTeam}
             style={{ cursor: "pointer" }}
-          > 
+          >
             PORTAFOLIO
-          </div>
-          <div 
-            className="employee-management"
-            onClick={navigateToEmployeeManagement}
-            style={{ cursor: "pointer" }}
-          > 
-            EMPLOYEE MANAGEMENT 
           </div>
           <img
             className="team"
             alt="Team"
             src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/team@2x.png"
           />
-          <div className="dashboard">
-            <div className="rectangle-3" />
-            <div className="rectangle-4" />
-            <div className="rectangle-5" />
-            <div className="rectangle-6" />
+          <div 
+            className="analytics"
+            onClick={navigateToAnalytics}
+            style={{ cursor: "pointer" }}
+          >
+            ANALYTICS
           </div>
-          <div className="toolkit">
-            <div className="overlap-4">
+          <div className="AnalyticsLogo">
+            <div className="overlap-2">
               <img
-                className="vector-3"
+                className="vector"
                 alt="Vector"
                 src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/vector@2x.png"
               />
@@ -224,44 +129,75 @@ export const AdministratorEmployeeManagement = () => {
               />
             </div>
           </div>
-          <div 
-            className="analytics"
-            onClick={navigateToAnalytics}
-            style={{ cursor: "pointer" }}
-          > 
-            ANALYTICS
-          </div>
-        </div>
-        <div className="overlap-5">
+
+          {/* Language toggle button */}
           <div className="switch-off">
-            <div className="text-wrapper-13">ES</div>
-            <div
-              className="oval-copy-wrapper"
-              style={{
-                backgroundImage:
-                  "url(https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/rectangle-copy-3@2x.png)",
-              }}
-            >
-              <img
-                className="oval-copy"
-                alt="Oval copy"
-                src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/oval-copy@2x.png"
+            <div className="text-wrapper">ES</div>
+            <Switch/>
+          </div>
+          <div className="text-wrapper-2">ENG</div>
+
+          {/* User dropdown button - shows Settings and Logout dropdown items */}
+          <div style={{
+              display: 'flex',
+              flexDirection: 'row',
+              marginTop: '10px',
+              marginRight: '10px',
+              justifyContent: 'flex-end'
+            }}> 
+            <UserDropdown/>
+          </div>
+          
+          {/* Search bar */}
+          <div className="input">
+            <div className="input-text-en-fondo">
+              <input 
+                className="Buscar" 
+                placeholder="Buscar" 
+                style={{ 
+                  marginTop: '-20px',
+                  marginLeft: '-20px',
+                  width: '320px',   
+                  height: '50px',       
+                  fontSize: '1rem', 
+                }} 
               />
             </div>
           </div>
-          <div className="text-wrapper-14">ENG</div>
-          <img
-            className="users"
-            alt="Users"
-            src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/users-1@2x.png"
-          />
+          
+          {/* Filter buttons for filtering All, Employees, Contractors */}
+          <div className="group-4">
+            <FilterButton/>
+          </div>
+
+          {/* Filter Dropdown */}
+          <div className="text-wrapper-13">Filter</div>
+          <div><FilterDropdown/></div>
+          
+          {/* Add user button */}
+          <div className="group-5">
+            <div className="text-wrapper-11">Add Users</div>
+            <div className="vector-wrapper">
+              <img
+                className="vector-2"
+                alt="Vector"
+                src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/vector-5@2x.png"
+              />
+            </div>
+          </div>
+
+          {/* Export button */}
+          <div className="rectangle-9" />
+          <div className="text-wrapper-12">Export</div>
+          
+          {/* Employee data table */}
+          <div className="group-wrapper">
+            <Table data={data} />
+          </div>
+
         </div>
-        <img
-          className="rectangle-7"
-          alt="Rectangle"
-          src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/6491bb81c2e7554253acb1c4/img/rectangle-6@2x.png"
-        />
+
       </div>
     </div>
   );
-};
+}

@@ -105,7 +105,7 @@
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: -1px;
+  top: 1px;
 }
 
 .administrator-my .overlap-group {
@@ -131,11 +131,11 @@
   font-family: "Poppins", Helvetica;
   font-size: 16px;
   font-weight: 400;
-  left: 1112px;
+  left: 1104px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 14px;
+  top: 16px;
 }
 
 .administrator-my .group {
@@ -154,26 +154,6 @@
   position: absolute;
   top: 15px;
   width: 34px;
-}
-
-.administrator-my .rectangle-4 {
-  background-color: #ffffff4c;
-  border-radius: 100px;
-  height: 50px;
-  left: 12px;
-  position: absolute;
-  top: 256px;
-  width: 279px;
-}
-
-.administrator-my .ruta-n-wrapper {
-  background-color: #fdc300;
-  border-radius: 29.5px;
-  height: 59px;
-  left: 129px;
-  position: absolute;
-  top: 10px;
-  width: 59px;
 }
 
 .administrator-my .img {
@@ -210,6 +190,17 @@
   white-space: nowrap;
 }
 
+.administrator-my .rectangle-88 {
+  position: absolute;
+  width: 285px;
+  height: 50px;
+  left: 12px;
+  top: 256px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 100px;
+
+}
+
 .administrator-my .team {
   height: 21px;
   left: 27px;
@@ -218,7 +209,7 @@
   width: 25px;
 }
 
-.administrator-my .dashboard {
+.administrator-my .EmployeeMgmtLogo {
   height: 18px;
   left: 27px;
   position: absolute;
@@ -262,7 +253,7 @@
   width: 8px;
 }
 
-.administrator-my .toolkit {
+.administrator-my .AnalyticsLogo {
   height: 20px;
   left: 27px;
   position: absolute;
@@ -304,13 +295,13 @@
   white-space: nowrap;
 }
 
-.administrator-my .users {
+/* .administrator-my .users {
   height: 28px;
   left: 1236px;
   position: absolute;
   top: 13px;
   width: 28px;
-}
+} */
 
 .administrator-my .input {
   height: 50px;
@@ -974,7 +965,7 @@
   line-height: normal;
   position: absolute;
   text-align: center;
-  top: 105px;
+  top: 108px;
   width: 64px;
 }
 

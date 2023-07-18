@@ -1,30 +1,26 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./AdminAnalytics.css";
+import "./ManagerAnalytics.css";
 import {Switch} from "antd";
 import UserDropdown from "../components/UserDropdown";
 
-export const AdministratorAnalytics = () => {
+export const ManagerAnalytics = () => {
   const navigate = useNavigate();
   
   const navigateToHome = () => {
-    navigate("/AdminHome");
-  };
-
-  const navigateToEmployeeManagement = () => {
-    navigate("/AdminEmployeeMgmt");
+    navigate("/ManagerHome");
   };
 
   const navigateToMyTeam = () => {
-    navigate("/AdminPortafolio");
+    navigate("/ManagerPortafolio");
   };
 
   const navigateToAnalytics = () => {
-    navigate("/AdminAnalytics");
+    navigate("/ManagerAnalytics");
   };
 
   return (
-    <div className="administrator">
+    <div className="manager-analytics">
       <div className="div">
         <div className="overlap">
 
@@ -61,19 +57,6 @@ export const AdministratorAnalytics = () => {
             alt="Home miruta"
             src="https://anima-uploads.s3.amazonaws.com/projects/6491ba3f0661cd45078662b8/releases/64920f1c6aef5e22ae256add/img/home-miruta@2x.png"
           />
-          <div 
-            className="employee-management"
-            onClick={navigateToEmployeeManagement}
-            style={{ cursor: "pointer" }}
-          >
-            EMPLOYEE MANAGEMENT
-          </div>
-          <div className="EmployeeMgmtLogo">
-            <div className="rectangle-5" />
-            <div className="rectangle-6" />
-            <div className="rectangle-7" />
-            <div className="rectangle-8" />
-          </div>
           <div 
             className="my-team"
             onClick={navigateToMyTeam}

@@ -1,63 +1,63 @@
-.administrator-home1 {
+.manager-analytics {
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
-}
-
-.administrator-home1 .overlap {
+  }
+  
+  .manager-analytics .overlap {
     height: 832px;
     left: 0;
     position: absolute;
     top: 0;
     width: 1280px;
-}
-
-.administrator-home1 .rectangle {
+  }
+  
+  .manager-analytics .rectangle {
     background-color: #dcf6f3;
     height: 778px;
     left: 303px;
     position: absolute;
     top: 52px;
     width: 976px;
-}
+  }
   
-.administrator-home1 .rectangle-2 {
+  .manager-analytics .rectangle-2 {
     background-color: #59afa0;
     height: 832px;
     left: 0;
     position: absolute;
     top: 0;
     width: 304px;
-}
-
-.administrator-home1 .logo-rutan {
+  }
+  
+  .manager-analytics .logo-rutan {
     height: 71px;
     left: 90px;
     position: absolute;
     top: 744px;
     width: 125px;
-}
+  }
   
-.administrator-home1 .mask-group {
+  .manager-analytics .mask-group {
     height: 832px;
     left: 0;
     position: absolute;
     top: 0;
     width: 304px;
-}
-
-.administrator-home1 .rectangle-3 {
+  }
+  
+  .manager-analytics .rectangle-3 {
     background-color: #59afa0;
     height: 54px;
     left: 304px;
     position: absolute;
     top: 0;
     width: 976px;
-}
-
-.administrator-home1 .group {
+  }
+  
+  .manager-analytics .group {
     background-color: #fdc300;
     border-radius: 29.5px;
     height: 59px;
@@ -65,176 +65,123 @@
     position: absolute;
     top: 10px;
     width: 59px;
-}
-
-.administrator-home1 .ruta-n {
+  }
+  
+  .manager-analytics .ruta-n {
     height: 28px;
     left: 13px;
     position: absolute;
     top: 15px;
     width: 34px;
-}
-
-.administrator-home1 .rectangle-88 {
-    position: absolute;
-    width: 285px;
-    height: 50px;
-    left: 8px;
-    top: 129px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 100px;
-}
+  }
   
-.administrator-home1 .home {
+  .manager-analytics .home {
     color: #ffffff;
     font-family: "Poppins", Helvetica;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     left: 60px;
     letter-spacing: 0;
     line-height: 21.7px;
     position: absolute;
     top: 143px;
     white-space: nowrap;
-}
-
-.administrator-home1 .home-miruta {
+  }
+  
+  .manager-analytics .home-miruta {
     height: 19px;
     left: 27px;
     position: absolute;
     top: 144px;
     width: 19px;
-}
-
-.administrator-home1 .employee-management {
-    color: #ffffff;
-    font-family: "Poppins", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    left: 59px;
-    letter-spacing: 0;
-    line-height: 21.7px;
-    position: absolute;
-    top: 204px;
-    white-space: nowrap;
-}
-
-.administrator-home1 .EmployeeMgmtLogo {
-    height: 18px;
-    left: 27px;
-    position: absolute;
-    top: 207px;
-    width: 18px;
-}
-
-.administrator-home1 .rectangle-5 {
-    background-color: #2db2a0;
-    height: 10px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 8px;
-}
+  }
   
-.administrator-home1 .rectangle-6 {
-    background-color: #b7faf1;
-    height: 6px;
-    left: 0;
+  .manager-analytics .my-team {
     position: absolute;
-    top: 12px;
-    width: 8px;
-}
-  
-.administrator-home1 .rectangle-7 {
-    background-color: #2db2a0;
-    height: 10px;
-    left: 10px;
-    position: absolute;
-    top: 8px;
-    width: 8px;
-}
-
-.administrator-home1 .rectangle-8 {
-    background-color: #b7faf1;
-    height: 7px;
-    left: 10px;
-    position: absolute;
-    top: 0;
-    width: 8px;
-}
-
-.administrator-home1 .my-team {
-    color: #ffffff;
+    left: 4.84%;
+    right: 88.91%;
+    top: 25%;
+    bottom: 72.36%;
     font-family: "Poppins", Helvetica;
-    font-size: 18px;
+    font-style: normal;
     font-weight: 500;
-    left: 62px;
-    letter-spacing: 0;
-    line-height: 21.7px;
+    font-size: 18px;
+    line-height: 120.5%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  
+  .manager-analytics .team {
     position: absolute;
-    top: 268px;
-    white-space: nowrap;
-}
-
-.administrator-home1 .team {
+    width: 25px;
     height: 21px;
     left: 27px;
-    position: absolute;
-    top: 269px;
-    width: 25px;
-}
-
-.administrator-home1 .analytics {
-    color: #ffffff;
-    font-family: "Poppins", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    left: 58px;
-    letter-spacing: 0;
-    line-height: 21.7px;
-    position: absolute;
-    top: 332px;
-    white-space: nowrap;
-}
+    top: 208px;
+  }
   
-.administrator-home1 .AnalyticsLogo {
+  .manager-analytics .rectangle-88 {
+    position: absolute;
+    width: 285px;
+    height: 50px;
+    left: 11px;
+    top: 255px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 100px;
+  }
+  
+  .manager-analytics .analytics {
+    position: absolute;
+    left: 4.53%;
+    right: 87.89%;
+    top: 32.69%;
+    bottom: 64.66%;
+    font-family: "Poppins", Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120.5%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  
+  .manager-analytics .AnalyticsLogo {
     height: 20px;
     left: 27px;
     position: absolute;
-    top: 334px;
+    top: 271px;
     width: 18px;
-}
-
-.administrator-home1 .overlap-2 {
+  }
+  
+  .manager-analytics .overlap-2 {
     height: 20px;
     position: relative;
-}
+  }
   
-.administrator-home1 .vector {
+  .manager-analytics .vector {
     height: 19px;
     left: 0;
     position: absolute;
     top: 0;
     width: 14px;
-}
+  }
   
-.administrator-home1 .subtract {
+  .manager-analytics .subtract {
     height: 11px;
     left: 7px;
     position: absolute;
     top: 9px;
     width: 11px;
-}
-
-.administrator-home1 .switch-off {
+  }
+  
+  .manager-analytics .switch-off {
     height: 23px;
     left: 1148px;
     position: absolute;
     top: 15px;
     width: 75px;
-}
+  }
   
-.administrator-home1 .text-wrapper {
+  .manager-analytics .text-wrapper {
     color: #ffffff;
     font-family: "Poppins", Helvetica;
     font-size: 16px;
@@ -244,9 +191,9 @@
     line-height: normal;
     position: absolute;
     top: 1px;
-}
-
-.administrator-home1 .text-wrapper-2 {
+  }
+  
+  .manager-analytics .text-wrapper-2 {
     color: #ffffff;
     font-family: "Poppins", Helvetica;
     font-size: 16px;
@@ -256,9 +203,9 @@
     line-height: normal;
     position: absolute;
     top: 16px;
-}
-
-.administrator-home1 .text-wrapper-3 {
+  }
+  
+  .manager-analytics .text-wrapper-3 {
     color: #59afa0;
     font-family: "Poppins", Helvetica;
     font-size: 20px;
@@ -269,7 +216,4 @@
     position: absolute;
     top: 95px;
     width: 289px;
-}
-
-
-  
+  }

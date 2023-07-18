@@ -1,0 +1,82 @@
+.employee-home {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.employee-home .overlap {
+    height: 832px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1280px;
+}
+
+.employee-home .rectangle {
+    background-color: #dcf6f3;
+    height: 778px;
+    left: 0px;
+    position: absolute;
+    top: 52px;
+    width: 1280px;
+}
+
+.employee-home .rectangle-2 {
+    background-color: #59afa0;
+    height: 54px;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    width: 1280px;
+}
+
+
+.employee-home .switch-off {
+    height: 23px;
+    left: 1148px;
+    position: absolute;
+    top: 15px;
+    width: 75px;
+}
+  
+.employee-home .text-wrapper {
+    color: #ffffff;
+    font-family: "Poppins", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 55px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 1px;
+}
+
+.employee-home .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Poppins", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 1104px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 16px;
+}
+
+.employee-home .text-wrapper-3 {
+    color: #59afa0;
+    font-family: "Poppins", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 177px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 97px;
+    width: 289px;
+}
+
+
+  
