@@ -1,12 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTable, usePagination } from 'react-table';
 import './Table.css'; 
+import { getEmployeeById, getContractorbyI } from '../api';
 
-function Table({ data }) {
+function Table({ filterOption }) {
+  // If data is not available, return null 
+  // if (!data || data.length === 0) {
+  //   return null; 
+  // }
+
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    // Async function that fetches data based on filter option
+    const fetchData = async () => {
+      let response;
+      switch(filterOption) {
+        case "NOMBRES":
+          response = await getAllEmployees(); // Call your API functions here
+          break;
+        case "APELLIDOS":
+          response = await getAllContractors(); // Call your API functions here
+          break;
+        // ... add more cases as needed ...
+        default:
+          break;
+      }
+      setData(response);  // assuming the response is the data you want to set
+    };
+
+    fetchData();
+  }, [filterOption]); 
+
   const columns = React.useMemo(
-    () => Object.keys(data[0]).map(key => ({ 
+    () => Object.keys(data[0] || {}).map(key => ({ 
       Header: key,
-      accessor: key, // accessor is the "key" in the data
+      accessor: key, 
     })),
     [data]
   );

@@ -1,0 +1,86 @@
+.update-info {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -90%);
+    background-color: #FFF;
+    padding: 5%;
+    z-index: 1000;
+    font-family: 'Poppins', 'Helvetica';
+    color: #2db2a0;
+    width: 70%;
+    height: 80%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.close-button {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+.title {
+    text-align: center;
+    margin-top: 0;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.name-image-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+}
+
+.name-label {
+    font-size: 2rem;
+    font-weight: normal;
+    color: #2db2a0;
+}
+
+.textboxes-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    justify-content: space-between;
+}
+
+.input-container {
+    width: 347px;
+    height: 50px;
+    font-size: 1rem;
+    margin-left: 26%;
+    margin-bottom: 12%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.change-button {
+    font-size: 1rem;
+    background-color: #2db2a0;
+    color: #ffffff;
+    width: 150px;
+    height: 50px;
+}
+
+.input-box {
+    width: 347px; 
+    height: 50px; 
+    font-size: 1rem;
+}

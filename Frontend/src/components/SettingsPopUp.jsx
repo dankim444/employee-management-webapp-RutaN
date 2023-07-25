@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import X from '../assets/X.png';
 import Modal from 'react-modal';
 import './SettingsPopUp.css';
@@ -11,7 +11,7 @@ class SettingsPopUp extends React.Component {
     super();
 
     this.state = {
-      isModalOneOpen: true,
+      isModalOneOpen: false,
       isModalTwoOpen: false,
       isModalThreeOpen: false,
     };
@@ -70,7 +70,6 @@ class SettingsPopUp extends React.Component {
     return (
       <div>
       <button 
-        // className='first-button'
         onClick={() => this.setState({ isModalOneOpen: true })}
       >
         Settings

@@ -93,7 +93,6 @@ export default function UpdateInfo2({ isOpen, handleClose }) {
                     justifyContent: 'center',
                     marginTop: '5%',
                 }}>
-                    {/* Change button */}
                     <button onClick={handleClose} style={{
                         fontSize: '1rem', 
                         backgroundColor: '#2db2a0',

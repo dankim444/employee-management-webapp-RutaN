@@ -61,7 +61,7 @@ const UserDropdown = () => {
             </ul>
           )}
           {/* opens setting after clicking on settings dropdown item */}
-        {isSettingOpen && <SettingsPopUp handleClose={closeSetting}/>} 
+        {isSettingOpen && <SettingsPopUp />} 
         </div>
     );
   }

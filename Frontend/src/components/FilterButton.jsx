@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function FilterButton() {
-  const [activeButton, setActiveButton] = useState(null);
+  const [activeButton, setActiveButton] = useState(1);
 
   const handleClick = (buttonId) => {
     setActiveButton(buttonId);
@@ -24,6 +24,7 @@ export default function FilterButton() {
       >
         <span style={{marginLeft: '25px'}}>All</span>
       </button>
+
       {/* Employees Button */}
       <button
         onClick={() => handleClick(2)}
@@ -39,6 +40,7 @@ export default function FilterButton() {
       >
         <span style={{marginLeft: '25px'}}>Employees</span>
       </button>
+
       {/* Contractors Button */}
       <button
         onClick={() => handleClick(3)}

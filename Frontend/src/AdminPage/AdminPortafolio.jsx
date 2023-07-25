@@ -347,6 +347,7 @@ export const AdministratorPortafolio = () => {
         </div>
       </div>
       {/* Pop up here */}
+      {/* {isPopup1Open && <SettingsPopUp/>} */}
       {isPopup1Open && <IndividualInfo 
         isOpen={isPopup1Open} 
         handleClose={handleClosePopup1} 

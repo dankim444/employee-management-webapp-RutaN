@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import settings from '../assets/settings.png';
 import personIcon from '../assets/personIcon.png';
-import UpdateInfo1 from './UpdateInfo1';
+import UpdateInfo1 from '../components/UpdateInfo1';
 
-const ContractorInfo = () => {
+const EmployeeInfo = () => {
     const [isPopUpOpen, setPopUpOpen] = useState(false);
 
     const navigateToUpdateInfo = () => { 
@@ -82,35 +82,25 @@ const ContractorInfo = () => {
                 </div>
 
                 {/* Information */}
-                <div style={{marginTop: '2%', marginLeft: '15%', maxHeight: '525px', overflowY: 'auto'}}>
+                <div style={{marginTop: '2%', marginLeft: '15%'}}>
                     <p>TIPO:</p>
                     <p>PORTAFOLIO:</p>
                     <p>IDENTIFICACION:</p>
-                    <p>APELLIDOS:</p>
-                    <p>NOMBRES:</p>
                     <p>FECHA INGRESO:</p>
                     <p>EMAIL:</p>
                     <p>FECHA DE NACIMIENTO:</p>
-                    <p>NOMBRE DEL SUPERVISOR:</p>
                     <p>GENERO:</p>
-                    <p>ABOGADO:</p>
-                    <p>FECHA APROBACION COMITE:</p>
-                    <p>NO ACTA:</p>
-                    <p>NO CONTRATO:</p>
-                    <p>VALOR:</p>
-                    <p>NO CDP:</p>
-                    <p>CENTRO DE COSTOS:</p>
-                    <p>FECHA DE TERMINACION:</p>
-                    <p>RPC:</p>
-                    <p>ARL:</p>
                     <p>EPS:</p>
                     <p>AFP:</p>
-                    <p>OBSERVACIONES:</p>
-                    <p>OTROSI:</p>
+                    <p>ROL:</p>
+                    <p>CONTRATO:</p>
+                    <p>ESTADO:</p>
+                    <p>CATEGORIA:</p>
+                    <p>CARGO:</p>
                 </div>
             </div>
         </div>
     );
 }
 
-export default ContractorInfo;
+export default EmployeeInfo;

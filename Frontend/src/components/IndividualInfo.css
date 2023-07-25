@@ -1,0 +1,19 @@
+.first-button {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .change-password {
+    position: absolute;
+    width: 235px;
+    height: 76px;
+    left: 390px;
+    top: 300px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: #2DB2A0;
+    font-family: "Poppins", "Helvetica";
+    font-size: 20px;
+    color: white;
+  }

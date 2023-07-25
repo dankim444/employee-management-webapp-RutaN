@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { LoginPage } from './Login';
@@ -11,11 +11,32 @@ import { ManagerPortafolio } from './ManagerPage/ManagerPortafolio';
 import { ManagerAnalytics } from './ManagerPage/ManagerAnalytics';
 import { EmployeeHome } from './EmployeePage/EmployeeHome';
 import { ContractorHome } from './ContractorPage/ContractorHome';
-import Modal from 'react-modal';
-
-Modal.setAppElement('#root') // assuming your app is within a div with id 'root'
 
 function App() {
+
+  // set up Axios HTTP request handling
+  // const [data, setData] = useState();
+
+  // request backend data using Axios
+  // const getData = async() => {
+  //   const response = await axios.get("http://localhost3000/getData");
+  //   setData(response.data);
+  // }
+
+  // useEffect(() => {
+  //   getData()
+  // },[]);
+
+  // fetch backend API
+  // useEffect(() => {
+  //   fetch("/api").then(
+  //     response => response.json()
+  //   ).then(
+  //     data => {
+  //       setData(data)
+  //     }
+  //   )
+  // }, [])
 
   return (
     <Router>

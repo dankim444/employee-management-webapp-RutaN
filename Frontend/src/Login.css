@@ -143,6 +143,8 @@
   position: absolute;
   top: 362px;
   width: fit-content;
+  color: #FFFFFF;
+  font-size: 24px;
 }
 
 .login-page .text-wrapper-2 {
@@ -175,6 +177,11 @@
   height: 20px;
   min-width: 20px;
   position: relative;
+  color: #ffffff;
+}
+
+.login-page .frame-3:active {
+  background-color: #59afa0; 
 }
 
 .login-page .text-wrapper-3 {

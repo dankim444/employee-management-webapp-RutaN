@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import settings from '../assets/settings.png';
 import personIcon from '../assets/personIcon.png';
-import UpdateInfo1 from './UpdateInfo1';
+import UpdateInfo1 from '../components/UpdateInfo1';
 
-const HomeInfo = () => {
+const ContractorInfo = () => {
     const [isPopUpOpen, setPopUpOpen] = useState(false);
 
     const navigateToUpdateInfo = () => { 
@@ -16,10 +16,10 @@ const HomeInfo = () => {
 
     const rectangleStyle = {
         position: 'relative',
-        width: '885px',
+        width: '927px',
         height: '570px',
         top: '15%',
-        left: '27%',
+        left: '14%',
         backgroundColor: 'white',
         boxShadow: '0px 4px 8px 0px rgba(0, 0, 0, 0.2)',
         fontSize: '15', 
@@ -82,25 +82,35 @@ const HomeInfo = () => {
                 </div>
 
                 {/* Information */}
-                <div style={{marginTop: '2%', marginLeft: '15%'}}>
+                <div style={{marginTop: '2%', marginLeft: '15%', maxHeight: '525px', overflowY: 'auto'}}>
                     <p>TIPO:</p>
                     <p>PORTAFOLIO:</p>
                     <p>IDENTIFICACION:</p>
+                    <p>APELLIDOS:</p>
+                    <p>NOMBRES:</p>
                     <p>FECHA INGRESO:</p>
                     <p>EMAIL:</p>
                     <p>FECHA DE NACIMIENTO:</p>
+                    <p>NOMBRE DEL SUPERVISOR:</p>
                     <p>GENERO:</p>
+                    <p>ABOGADO:</p>
+                    <p>FECHA APROBACION COMITE:</p>
+                    <p>NO ACTA:</p>
+                    <p>NO CONTRATO:</p>
+                    <p>VALOR:</p>
+                    <p>NO CDP:</p>
+                    <p>CENTRO DE COSTOS:</p>
+                    <p>FECHA DE TERMINACION:</p>
+                    <p>RPC:</p>
+                    <p>ARL:</p>
                     <p>EPS:</p>
                     <p>AFP:</p>
-                    <p>ROL:</p>
-                    <p>CONTRATO:</p>
-                    <p>ESTADO:</p>
-                    <p>CATEGORIA:</p>
-                    <p>CARGO:</p>
+                    <p>OBSERVACIONES:</p>
+                    <p>OTROSI:</p>
                 </div>
             </div>
         </div>
     );
 }
 
-export default HomeInfo;
+export default ContractorInfo;

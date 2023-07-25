@@ -5,7 +5,7 @@ import personIcon from '../assets/personIcon.png';
 const ChangePasswordPopup = () => {
     return (
         <div className="change-password-popup">
-          <div className="column"> 
+          <div className="column">  
               <img className='person-icon' src={personIcon} alt='Profile'/>
               <h2 className='name'>Name</h2>
           </div>

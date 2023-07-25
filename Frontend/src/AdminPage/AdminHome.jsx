@@ -1,4 +1,5 @@
 import React from 'react';
+// import 'src/AdminPage/AdminHome.css';
 import './AdminHome.css';
 import { useNavigate } from "react-router-dom";
 import {Switch} from "antd";
@@ -125,7 +126,8 @@ export const AdministratorHome = () => {
                         marginRight: '10px',
                         justifyContent: 'flex-end'
                         }}> 
-                        <UserDropdown/>
+                        {/* <UserDropdown/> */}
+                        <UserDropdown />
                     </div>
 
                     {/* My Information tab */}

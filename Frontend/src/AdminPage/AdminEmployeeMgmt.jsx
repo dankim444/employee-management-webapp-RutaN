@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./AdminEmployeeMgmt.css";
 import FilterButton from'../components/FilterButton';
@@ -6,27 +7,44 @@ import {Switch} from "antd";
 import UserDropdown from "../components/UserDropdown";
 import FilterDropdown from "../components/FilterDropdown";
 import Table from '../components/Table';
+import Searchbar from "../components/Searchbar";
+import { getAllEmployees } from '../api';
 
-const data = [
-  { NOMBRES: 'John', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'john@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
-  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
-  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
-  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
-  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
-  { NOMBRES: 'John', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'john@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
-  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
-  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
-  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
-  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
-  { NOMBRES: 'John', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'john@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
-  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
-  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
-  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
-  { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
-];
+// const data = [
+//   { NOMBRES: 'John', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'john@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+//   { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+//   { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+//   { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+//   { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+//   { NOMBRES: 'John', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'john@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+//   { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+//   { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+//   { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+//   { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+//   { NOMBRES: 'John', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'john@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+//   { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+//   { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+//   { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+//   { NOMBRES: 'Jane', APELLIDOS: 'KIM', IDENTIFICACIÓN: '1234567', FECHA_INGRESO: '1/1/11', EMAIL: 'jane@gmail.com', GENERO: 'M', FECHA_DE_NACIMIENTO: '1/1/11'},
+// ];
 
 export const AdministratorEmployeeManagement = () => {
   const navigate = useNavigate();
+  const [employeesData, setEmployeesData] = useState([]);
+  const [filterOption, setFilterOption] = useState('');
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await getAllEmployees(); // read in all employees
+        console.log('Data fetched from API:', data); // Check what is returned here
+        setEmployeesData(data);
+      } catch (error) {
+        console.error('Failed to fetch employees:', error);
+      }
+    };
+    fetchData();
+  }, []);
 
   const navigateToHome = () => {
     navigate("/AdminHome");
@@ -151,17 +169,7 @@ export const AdministratorEmployeeManagement = () => {
           {/* Search bar */}
           <div className="input">
             <div className="input-text-en-fondo">
-              <input 
-                className="Buscar" 
-                placeholder="Buscar" 
-                style={{ 
-                  marginTop: '-20px',
-                  marginLeft: '-20px',
-                  width: '320px',   
-                  height: '50px',       
-                  fontSize: '1rem', 
-                }} 
-              />
+              <Searchbar/>
             </div>
           </div>
           
@@ -172,7 +180,7 @@ export const AdministratorEmployeeManagement = () => {
 
           {/* Filter Dropdown */}
           <div className="text-wrapper-13">Filter</div>
-          <div><FilterDropdown/></div>
+          <div><FilterDropdown setFilterOption={setFilterOption}/></div>
           
           {/* Add user button */}
           <div className="group-5">
@@ -192,11 +200,12 @@ export const AdministratorEmployeeManagement = () => {
           
           {/* Employee data table */}
           <div className="group-wrapper">
-            <Table data={data} />
+            {/* <Table data={data} /> */}
+            {/* {employeesData && <Table data={employeesData} />} */}
+            {employeesData && employeesData.length > 0 && <Table data={employeesData} filterOption={filterOption}/>}
           </div>
 
         </div>
-
       </div>
     </div>
   );
