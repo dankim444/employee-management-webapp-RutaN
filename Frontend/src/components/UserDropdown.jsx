@@ -60,7 +60,6 @@ const UserDropdown = () => {
                 <li className="dropdown-item" onClick={() => handleOptionClick("Logout")}>Logout</li>
             </ul>
           )}
-          {/* opens setting after clicking on settings dropdown item */}
         {isSettingOpen && <SettingsPopUp />} 
         </div>
     );
