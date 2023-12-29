@@ -10,8 +10,6 @@ const config = {
   }
 };
 
-// define CRUD operations for director/manager?
-
 // Define axios CRUD operations for Employees
 
 // CREATE Employee (Human Talent only)

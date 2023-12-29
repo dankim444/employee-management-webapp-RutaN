@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTable, usePagination } from 'react-table';
 import './Table.css'; 
-import { getEmployeeById, getContractorbyI } from '../api';
+import { getAllEmployees, getAllContractors } from '../api';
 
 function Table({ filterOption }) {
   // If data is not available, return null 

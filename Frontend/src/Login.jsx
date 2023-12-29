@@ -10,40 +10,44 @@ import { getEmployeeById } from "./api";
 export const LoginPage = (id) => {
   const navigate = useNavigate();
   const [isActive, setActive] = useState(false);
-  const permittedRoles = ["admin", "manager", "employee", "contractor"]; // might need to edit this
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  // const handleLogin = () => {
-  //   axios
-  //   .post("YOUR_AUTHENTICATION_ENDPOINT", { // replace with the URL of your authentication endpoint 
-  //     email: email,
-  //     password: password,
-  //   })
-  //   .then((response) => {
-  //     // If the login was successful, navigate to the AdminHome page
-  //     navigate("/AdminHome");
-  //   })
-  //   .catch((error) => {
-  //     // If there was an error, log it and stay on the login page
-  //     console.log("Error during login:", error);
-  //   });
-  // };
-  
-  // handle RBAC via conditional rendering
   const handleLogin = () => {
-    getEmployeeById(id)
-        .then((response) => {
-            if (permittedRoles.includes(response.role)) {
-                navigate("/AdminHome");
-            } else {
-                console.log("Forbidden"); 
-            }
-        })
-        .catch((error) => {
-            console.log("Error during login:", error);
-        });
+    const credentials = {
+      email,
+      password
     };
+  
+    axios
+      .post("/api/login", credentials)
+      .then((response) => {
+        // navigate to the AdminHome page if login is successfull
+        if (response.status === 200) {
+          localStorage.setItem('token', response.data.token);
+          navigate("/AdminHome");
+        } else {
+          console.log("Invalid login credentials"); 
+        }
+      })
+      .catch((error) => {
+        console.log("Error during login:", error);
+      });
+  };
+  
+  // const handleLogin = () => {
+  //   getEmployeeById(id)
+  //       .then((response) => {
+  //           if (permittedRoles.includes(response.role)) {
+  //               navigate("/AdminHome");
+  //           } else {
+  //               console.log("Forbidden"); 
+  //           }
+  //       })
+  //       .catch((error) => {
+  //           console.log("Error during login:", error);
+  //       });
+  //   };
 
   return (
     <div className="login-page">
