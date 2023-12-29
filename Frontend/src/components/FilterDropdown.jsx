@@ -1,11 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import './FilterDropdown.css';
 
 export default function FilterDropdown({setFilterOption}) {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
-    const navigate = useNavigate();
   
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
